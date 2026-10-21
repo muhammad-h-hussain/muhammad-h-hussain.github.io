@@ -278,3 +278,6 @@ html:not(.js) .nav-list a { border: 0; padding: 4px 0; font-size: 0.95rem; }
 }
 
 .contact-actions { margin: 0 0 28px; }
+.card dd ul { list-style: disc; padding-left: 1.15em; margin: 0; }
+.card dd li + li { margin-top: 6px; }
+.card dd li::marker { color: var(--accent); }
