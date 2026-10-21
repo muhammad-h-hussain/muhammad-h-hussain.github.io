@@ -2,28 +2,29 @@
 
 Personal portfolio for Muhammad Hussain: regulatory change, process improvement and project delivery. Plain HTML, CSS and JavaScript. No frameworks, no build step.
 
+All text is written directly into `index.html`, so it shows without JavaScript and search engines and LinkedIn link previews can read every word.
+
 ## Files
 
-* `content.js`: every word on the site. **This is the one to edit.**
-* `index.html`: page structure. Rarely needs changing.
-* `styles.css`: layout, colours, light and dark mode. Rarely needs changing.
-* `main.js`: puts the content into the page and runs the project filters, mobile menu and theme switch. No need to edit.
+* `index.html`: every word on the site. **This is the one to edit.** Each section starts with a clearly marked comment such as `<!-- ===== PROJECTS ===== -->`.
+* `styles.css`: layout, colours, light and dark mode. No need to edit.
+* `main.js`: small extras only (mobile menu, theme switch, project filters). The site works without it.
 * `favicon.svg`: browser tab icon.
 
 ## Updating content
 
-1. Open `content.js`.
-2. Change the text inside the quotation marks. Keep the commas and brackets around it as they are.
+1. Open `index.html` in any text editor (or on GitHub, using the pencil icon).
+2. Find the section by its marked comment and change the text between the tags. For example, in `<p>Some text</p>` change only `Some text`.
 3. Save, then open `index.html` in your browser (double click it) to check the result.
 
 Tips:
 
-* Anything in `[square brackets]` is a placeholder. It shows **highlighted in yellow** on the site until you replace it. Open the browser console (F12) to see a list of any left.
-* To add a project, copy an existing `{ ... }` block in `projects.items`, paste it after the last one (with a comma between them) and edit it. `category` must match one of the names in `projects.categories`.
-* To add a CV download, save the PDF in this folder (for example `cv.pdf`) and set `cvUrl: "cv.pdf"`.
-* Update `meta.lastUpdated` (dd/mm/yyyy) when you make changes.
+* Placeholders look like `<mark class="ph">[NUMBER]</mark>` and show **highlighted in yellow** on the site. When you fill one in, delete the `<mark class="ph">` and `</mark>` tags as well, leaving just your text.
+* To add a project, copy a whole `<article class="card" ...> ... </article>` block, paste it after the last one and edit it. Its `data-category` must be `Regulatory`, `Process and technology` or `Project delivery`.
+* Update "Last updated" in the footer (dd/mm/yyyy) when you make changes.
+* If you change your headline, update the `<title>` and `description` tags at the top of `index.html`. That is the text Google and LinkedIn previews show.
 * House style: British English, UK dates (dd/mm/yyyy), no em dashes or double hyphens.
-* The page title and description also appear in `index.html` (the `<title>` and `<meta>` tags near the top). Update those too if you change them in `content.js`, as that is what search engines and link previews read.
+* To check nothing is left, search `index.html` for `ph"` and for `REPLACE-WITH`. The browser console (F12) also reports how many are left.
 
 ## Publishing on GitHub Pages
 
@@ -36,27 +37,39 @@ First time only:
 3. Choose the branch **main** and folder **/ (root)**, then **Save**.
 4. Wait a minute or two and visit https://muhammad-h-hussain.github.io.
 
-After that, every change merged or pushed to `main` is published automatically within a few minutes. You can edit `content.js` directly on GitHub (pencil icon, then **Commit changes**) if you do not want to use git locally.
+After that, every change merged or pushed to `main` is published automatically within a few minutes.
 
 The empty `.nojekyll` file tells GitHub Pages to serve the files exactly as they are.
 
+LinkedIn caches link previews. After changing the title or description, paste your URL into the LinkedIn Post Inspector (https://www.linkedin.com/post-inspector/) to refresh it.
+
 ## Placeholders to fill in
 
-Everything below is in `content.js`. None of these figures have been invented: replace each with a real, public number or outcome, or delete the sentence if you cannot share it.
+None of these figures have been invented: replace each with a real, public number or outcome, or delete the sentence if you cannot share it.
 
-**Contact details** (`person`)
+**Links** (replace every occurrence; they are real links once filled in)
+
+* `REPLACE-WITH-LINKEDIN-ID`: your LinkedIn profile ID, the part after `linkedin.com/in/`. Appears 2 times (hero button, contact button).
+* `REPLACE-WITH-EMAIL@example.com`: your email address. Appears 3 times (hero "Get in touch" button, contact "Email me" button, contact list).
+
+**Contact section**
 
 * `[EMAIL ADDRESS]`
-* `[LINKEDIN URL]` (full address, for example `https://www.linkedin.com/in/your-name`). The hero LinkedIn button links to it once set.
+* `[LINKEDIN PROFILE NAME]`
 * `[LOCATION, e.g. London, UK]`
 * `[AVAILABILITY, e.g. notice period and relocation timeline]`
-* `cvUrl` (optional, leave empty to hide the CV button)
 
 **About**
 
 * `[OPTIONAL: one personal line on why the Gulf, e.g. family, long term plans or timing.]`
 
-**Project results**
+**Experience**
+
+* Ministry of Justice: `[ROLE TITLE]`, `[DATES]`, `[ONE LINE SUMMARY]`
+* NHS: `[ROLE TITLE]`, `[DATES]`, `[ONE LINE SUMMARY]`
+* Reorder these two so the most recent is first.
+
+**Project outcomes**
 
 * Brexit transition team: `[NUMBER]` licence changes processed; `[OUTCOME, e.g. completed within the transition deadline]`
 * CAP grandfathering: `[NUMBER]` products converted; `[OUTCOME, e.g. continuity of supply maintained]`
@@ -72,7 +85,8 @@ Everything below is in `content.js`. None of these figures have been invented: r
 
 * `[OTHER TOOLS, e.g. Excel, Power BI, Visio]`
 
-**Worth checking**
+## Worth checking
 
-* The "Problem" and "What I did" text on each project card is written at a general, public level from the project titles. Read each one and adjust anything that does not match what you actually did, or that is more detail than you are comfortable sharing publicly.
+* The Context, Challenge and What I did text on each case study is written at a general, public level from the project titles. Read each one and adjust anything that does not match what you did, or that is more detail than you are comfortable sharing publicly.
 * PDN is left as an abbreviation. Spell it out if you want recruiters outside UK regulation to follow it.
+* There is no preview image for LinkedIn. To add one, save a 1200 x 627 pixel image as `preview.png` in this folder and add `<meta property="og:image" content="https://muhammad-h-hussain.github.io/preview.png">` to the top of `index.html`.
