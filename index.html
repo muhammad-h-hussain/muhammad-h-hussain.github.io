@@ -140,6 +140,7 @@
             <h3>Project delivery</h3>
             <p class="lead">Coordinating change across teams and stakeholders.</p>
             <ul>
+              <li>Planned and delivered a two-stage migration of 175,491 files with no reporting downtime</li>
               <li>Coordinating migrations and rollouts across multiple teams</li>
               <li>Keeping stakeholders informed, aligned and moving</li>
               <li>PMP candidate, exam scheduled for December 2026</li>
@@ -156,7 +157,7 @@
     <section id="projects" class="section" aria-labelledby="projects-h">
       <div class="wrap">
         <h2 id="projects-h">Projects</h2>
-        <p class="section-intro">Short case studies, described at a public, professional level.</p>
+        <p class="section-intro">Short case studies, strongest first, described at a public, professional level.</p>
         <div class="filters" role="group" aria-label="Filter projects by area" hidden>
           <button type="button" class="filter" data-cat="All" aria-pressed="true">All</button>
           <button type="button" class="filter" data-cat="Regulatory" aria-pressed="false">Regulatory</button>
@@ -165,6 +166,77 @@
         </div>
         <p id="project-count" class="visually-hidden" aria-live="polite"></p>
         <div class="cards">
+
+          <article class="card" data-category="Project delivery">
+            <span class="tag">Project delivery</span>
+            <h3>Department-wide SharePoint migration with zero reporting disruption</h3>
+            <dl>
+              <dt>Context</dt>
+              <dd>My department's documents had to move from a retiring classic SharePoint site to a new modern site, as part of an agency-wide programme.</dd>
+              <dt>Challenge</dt>
+              <dd>175,491 files and folders across four document libraries. Several teams' Power BI reports and Power Automate flows read directly from files on the old site. A standard cutover would have broken live reporting on day one.</dd>
+              <dt>What I did</dt>
+              <dd>
+                <ul>
+                  <li>Acted as the single point of contact for the department.</li>
+                  <li>Analysed the full export to find a review depth managers could actually use. Full depth gave 27,502 paths nested up to 28 levels. A first pass at three levels gave 220 paths but missed folders the export had mislabelled.</li>
+                  <li>Fixed that by treating any path segment without a file extension as a folder. This gave 516 folder paths for managers to review.</li>
+                  <li>Built the mapping template: fixed dropdown decisions, red/amber/green formatting, and blanks defaulting to "migrate like for like", so a missed reply could never cause data loss.</li>
+                  <li>Flagged the reporting dependency two weeks before migration. Proposed a two-stage go-live: all content moved on schedule, and connected files switched over separately once their owners were ready.</li>
+                  <li>Produced a 27 slide account of the migration for the head of department, including lessons for future waves.</li>
+                </ul>
+              </dd>
+              <dt class="result">Outcome</dt>
+              <dd class="result-text">Completed 03/08/2026 with no interruption to live reporting. Seven days between the two go-lives. Access issues raised on go-live morning were resolved within two working days. After one agreed one-week extension, every date held. Formally signed off through change control.</dd>
+            </dl>
+          </article>
+
+          <article class="card" data-category="Process and technology">
+            <span class="tag">Process and technology</span>
+            <h3>Fixing error data that decides staff outcomes</h3>
+            <dl>
+              <dt>Context</dt>
+              <dd>Individual error rates, measured against a 2% quality target, decide whether staff are placed on a formal quality review. The figures must be right.</dd>
+              <dt>Challenge</dt>
+              <dd>The underlying data was unreliable. The monthly reports managers received could not be reconciled with the rates used in management meetings.</dd>
+              <dt>What I did</dt>
+              <dd>
+                <ul>
+                  <li>Applied a Lean Six Sigma root cause approach.</li>
+                  <li>Reviewed over 2,100 records and verified 112 individually against source.</li>
+                  <li>Found a duplicate rate of around 6%, with 67 entries inflating counts. Error rates were overstated by up to 1.7 percentage points.</li>
+                  <li>Traced five root causes: a manual copy step between sheets, free-text name entry, no date logic, no roster maintenance and no duplicate check.</li>
+                  <li>Put a control on each: a fixed-list dropdown, a validation rule with a conditional formatting backstop, removal of the second sheet, automatic roster population and duplicate detection.</li>
+                  <li>Rebuilt the monthly report as a dashboard on a validation-date basis, so it matches the management meeting figures. It shows KPI tiles, flagged staff, errors by team and category, and the top 10 work types. Two input cells drive it, so it can be reused every month.</li>
+                </ul>
+              </dd>
+              <dt class="result">Outcome</dt>
+              <dd class="result-text">Decisions about staff now rest on verified figures. File size cut by 95%. The dashboard was presented to delivery managers in October 2026. I wrote the procedure that embeds the new controls.</dd>
+            </dl>
+          </article>
+
+          <article class="card" data-category="Process and technology">
+            <span class="tag">Process and technology</span>
+            <h3>Blue Prism robot performance analysis</h3>
+            <dl>
+              <dt>Context</dt>
+              <dd>Some routine, rules based work is automated using Blue Prism robots (robotic process automation, or RPA).</dd>
+              <dt>Challenge</dt>
+              <dd>Without clear performance reporting, it was hard to see what the robots were really delivering.</dd>
+              <dt>What I did</dt>
+              <dd>
+                <ul>
+                  <li>Analysed three reporting periods, deduplicating 10,145 raw processing events to 5,200 unique submissions.</li>
+                  <li>Set a baseline: 35.7% processed by the robot with no human input, 42.0% out of scope, and 22.2% failed or flagged.</li>
+                  <li>Categorised 4,040 error events. Out of scope was the largest category.</li>
+                  <li>Identified that post-upgrade figures could not be trusted. A technical fault stopped failures being recorded, so an apparent 63.2% success rate was overstated.</li>
+                  <li>Built a six-sheet, auditable Excel report with live formulas.</li>
+                </ul>
+              </dd>
+              <dt class="result">Outcome</dt>
+              <dd class="result-text">Gave decision-makers an accurate picture of what the automation was delivering, which informed a decision on the future of the automation programme. Recognised with a manager-nominated award for testing, troubleshooting and supplier coordination during the automation platform upgrade.</dd>
+            </dl>
+          </article>
 
           <article class="card" data-category="Regulatory">
             <span class="tag">Regulatory</span>
@@ -228,16 +300,23 @@
 
           <article class="card" data-category="Process and technology">
             <span class="tag">Process and technology</span>
-            <h3>Blue Prism robot performance analysis</h3>
+            <h3>System fault investigation</h3>
             <dl>
               <dt>Context</dt>
-              <dd>Some routine, rules based work is automated using Blue Prism robots (robotic process automation, or RPA).</dd>
+              <dd>Cases were being allocated to the wrong teams by the case management system.</dd>
               <dt>Challenge</dt>
-              <dd>Without clear performance reporting, it was hard to see what the robots were delivering and where they needed attention.</dd>
+              <dd><mark class="ph">[CHALLENGE]</mark></dd>
               <dt>What I did</dt>
-              <dd>Analysed robot performance data and built reporting that summarised throughput, exceptions and trends, then shared findings and recommendations with stakeholders.</dd>
+              <dd>
+                <ul>
+                  <li>Spotted that the failures were recurring rather than one-offs.</li>
+                  <li>Collated five cases and escalated them to the IT supplier as a possible defect. The supplier confirmed three were caused by reference data: companies not mapped to the correct team.</li>
+                  <li>Identified a second, separate failure mode and pushed for a full query, which found 83 unmapped companies.</li>
+                  <li>Made sure affected cases were kept off staff error records, so nobody was penalised for a system fault.</li>
+                </ul>
+              </dd>
               <dt class="result">Outcome</dt>
-              <dd class="result-text"><mark class="ph">[X hours]</mark> of manual effort saved per <mark class="ph">[PERIOD]</mark>. <mark class="ph">[X%]</mark> of exceptions traced to <mark class="ph">[CAUSE]</mark>. <mark class="ph">[OUTCOME]</mark>.</dd>
+              <dd class="result-text">Root cause confirmed: the system function that flagged new companies for mapping had stopped working. The mapping backlog is being fixed at source.</dd>
             </dl>
           </article>
 
@@ -246,58 +325,81 @@
             <h3>Classifier retimings mastersheet and findings report</h3>
             <dl>
               <dt>Context</dt>
-              <dd>Classifier task timings are recorded in a mastersheet and used to understand how long work takes.</dd>
+              <dd>Time targets for each type of work underpin productivity reporting and planning.</dd>
               <dt>Challenge</dt>
-              <dd>The mastersheet had become hard to maintain, which made the timing data harder to trust for planning.</dd>
+              <dd><mark class="ph">[CHALLENGE]</mark></dd>
               <dt>What I did</dt>
-              <dd>Rebuilt the mastersheet with a clearer structure, analysed the retiming data and wrote a findings report with recommendations.</dd>
+              <dd>Rebuilt the timings mastersheet from scratch. Used stratified sampling across four work types and wrote a findings report.</dd>
               <dt class="result">Outcome</dt>
-              <dd class="result-text"><mark class="ph">[OUTCOME, e.g. timings now used for resource planning]</mark>. <mark class="ph">[X%]</mark> <mark class="ph">[IMPROVEMENT, e.g. reduction in time spent maintaining the sheet]</mark>.</dd>
+              <dd class="result-text">Targets validated for three of the four work types, with an uplift recommended for the fourth. A cross-cutting finding showed system issues affecting 35 to 38% of cases. New targets went live on 10/08/2026, with forms and templates updated to match.</dd>
             </dl>
           </article>
 
           <article class="card" data-category="Process and technology">
             <span class="tag">Process and technology</span>
-            <h3>Monthly error reporting template</h3>
+            <h3>SOP governance: review reminders and training standards</h3>
             <dl>
               <dt>Context</dt>
-              <dd>Delivery managers oversee teams handling regulatory work, where errors are tracked to protect quality.</dd>
+              <dd><mark class="ph">[CONTEXT]</mark></dd>
               <dt>Challenge</dt>
-              <dd>There was no consistent monthly view of errors, which made recurring issues hard to spot and act on.</dd>
+              <dd><mark class="ph">[CHALLENGE]</mark></dd>
               <dt>What I did</dt>
-              <dd>Designed a standard monthly error reporting template using Lean Six Sigma thinking: clear error categories, consistent measurement and a focus on root causes.</dd>
+              <dd>
+                <ul>
+                  <li>Designed and published (21/09/2026) a three-stage reminder and escalation process: two months before a review date, two weeks before (senior manager copied in), and one day after. Every reminder is logged as an audit trail.</li>
+                  <li>Reconciled the central tracker against a second published list. Of 119 matched SOPs, the tracker was more current for 109. Nine SOPs were missing from the tracker entirely, so they sat outside the review cycle.</li>
+                  <li>Retired the duplicate list so there is one source of truth.</li>
+                  <li>Wrote a training best practice procedure. Trainer and trainee both sign a checklist for each procedure, with clear triggers for when training is needed.</li>
+                </ul>
+              </dd>
               <dt class="result">Outcome</dt>
-              <dd class="result-text">Used by <mark class="ph">[NUMBER]</mark> delivery managers. <mark class="ph">[X% reduction]</mark> in <mark class="ph">[ERROR TYPE]</mark> over <mark class="ph">[PERIOD]</mark>.</dd>
-            </dl>
-          </article>
-
-          <article class="card" data-category="Process and technology">
-            <span class="tag">Process and technology</span>
-            <h3>SOP and policy work</h3>
-            <dl>
-              <dt>Context</dt>
-              <dd>Standard operating procedures (SOPs) and training checklists underpin consistent, auditable work in a regulator.</dd>
-              <dt>Challenge</dt>
-              <dd>Training checklists and SOP reviews relied too heavily on individual practice, so procedures risked becoming inconsistent or out of date.</dd>
-              <dt>What I did</dt>
-              <dd>Wrote a best practice procedure for training checklists, and designed an SOP review reminder and escalation process so documents are reviewed on time.</dd>
-              <dt class="result">Outcome</dt>
-              <dd class="result-text"><mark class="ph">[NUMBER]</mark> SOPs covered by the review process. <mark class="ph">[OUTCOME, e.g. X% reviewed by their due date]</mark>.</dd>
+              <dd class="result-text">SOP review dates now come from one source, with documented escalation and an audit trail.</dd>
             </dl>
           </article>
 
           <article class="card" data-category="Project delivery">
             <span class="tag">Project delivery</span>
-            <h3>SharePoint classic to modern migration</h3>
+            <h3>New department intranet site</h3>
             <dl>
               <dt>Context</dt>
-              <dd>Team sites built on classic SharePoint needed moving to modern SharePoint, which offers a cleaner experience and better mobile support.</dd>
+              <dd>The department's old wiki was a dated page of links and was not included in the migration.</dd>
               <dt>Challenge</dt>
-              <dd>Many site owners and teams were involved, and the migration had to happen without disrupting day to day work.</dd>
+              <dd><mark class="ph">[CHALLENGE]</mark></dd>
               <dt>What I did</dt>
-              <dd>Coordinated the migration across site owners and teams: tracking progress, communicating timelines and resolving issues as they came up.</dd>
+              <dd>
+                <ul>
+                  <li>Audited every link and content section on the old wiki, so nothing was dropped without a decision.</li>
+                  <li>Designed a six-page site, built as an exemplar other teams can copy.</li>
+                  <li>Built a Meet the Teams page with Microsoft Teams contact cards, so new joiners can contact managers directly.</li>
+                  <li>Turned staff recognition from a page that was overwritten each time into a permanent monthly record. January and February 2026 alone recognise around 30 colleagues across 12 nominations.</li>
+                  <li>Added a "Something missing?" button that lets staff send suggestions privately instead of through a shared spreadsheet.</li>
+                </ul>
+              </dd>
               <dt class="result">Outcome</dt>
-              <dd class="result-text"><mark class="ph">[NUMBER]</mark> sites migrated across <mark class="ph">[NUMBER]</mark> teams. <mark class="ph">[OUTCOME, e.g. completed by the target date]</mark>.</dd>
+              <dd class="result-text">52 page views from colleagues who found the site before any announcement. Testing with staff and launch in progress.</dd>
+            </dl>
+          </article>
+
+          <article class="card" data-category="Project delivery">
+            <span class="tag">Project delivery</span>
+            <h3>Change control</h3>
+            <dl>
+              <dt>Context</dt>
+              <dd><mark class="ph">[CONTEXT]</mark></dd>
+              <dt>Challenge</dt>
+              <dd><mark class="ph">[CHALLENGE]</mark></dd>
+              <dt>What I did</dt>
+              <dd>
+                <ul>
+                  <li>Raised or progressed six change requests in one quarter.</li>
+                  <li>Persuaded a requester that removing a process step still needs formal change control.</li>
+                  <li>Adopted a new certificate assessment work instruction, making sure the corrected wording was applied.</li>
+                  <li>Removed a cover letter requirement, identifying the six procedure sections affected.</li>
+                  <li>Progressed new application forms, now published on the MHRA website.</li>
+                </ul>
+              </dd>
+              <dt class="result">Outcome</dt>
+              <dd class="result-text"><mark class="ph">[OUTCOME]</mark></dd>
             </dl>
           </article>
 
@@ -314,7 +416,8 @@
             <h3>Change Advisor (HEO)</h3>
             <p class="org">MHRA, Continuous Improvement team, Data Assurance and Quality</p>
             <p class="dates">Feb 2023 to present</p>
-            <p class="summary">Process improvement, Blue Prism performance reporting, error reporting, SOP development and change coordination across teams.</p>
+            <p class="summary">Led my department's SharePoint migration, rebuilt error data and reporting, ran SOP governance and change control, and investigated system faults, as the only Change Advisor on business-as-usual work.</p>
+            <p class="summary">Recognised with two manager-nominated performance awards.</p>
           </li>
           <li>
             <h3>DAQ Classifier</h3>
@@ -377,8 +480,9 @@
             <ul class="chips">
               <li>Blue Prism (RPA)</li>
               <li>Data analysis and reporting</li>
-              <li>SharePoint (classic to modern)</li>
-              <li><mark class="ph">[OTHER TOOLS, e.g. Excel, Power BI, Visio]</mark></li>
+              <li>Excel (advanced)</li>
+              <li>Power BI</li>
+              <li>SharePoint (modern)</li>
             </ul>
           </div>
           <div>
@@ -387,6 +491,7 @@
               <li>Stakeholder coordination</li>
               <li>Cross-team change</li>
               <li>Migration planning and tracking</li>
+              <li>Change control</li>
               <li>Project management (PMP candidate)</li>
             </ul>
           </div>

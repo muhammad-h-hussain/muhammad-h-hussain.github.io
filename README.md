@@ -69,24 +69,25 @@ None of these figures have been invented: replace each with a real, public numbe
 * NHS: `[ROLE TITLE]`, `[DATES]`, `[ONE LINE SUMMARY]`
 * Reorder these two so the most recent is first.
 
-**Project outcomes**
+**Projects: post-Brexit cards**
 
 * Brexit transition team: `[NUMBER]` licence changes processed; `[OUTCOME, e.g. completed within the transition deadline]`
 * CAP grandfathering: `[NUMBER]` products converted; `[OUTCOME, e.g. continuity of supply maintained]`
 * PDN licence conversions: `[NUMBER]` PDN licences converted; `[OUTCOME]`
 * QPPV address conversions: `[NUMBER]` licences updated; `[OUTCOME, e.g. compliant ahead of the legislative deadline]`
-* Blue Prism robot performance analysis: `[X hours]` saved per `[PERIOD]`; `[X%]` of exceptions traced to `[CAUSE]`; `[OUTCOME]`
-* Classifier retimings mastersheet: `[OUTCOME, e.g. timings now used for resource planning]`; `[X%]` `[IMPROVEMENT, e.g. reduction in time spent maintaining the sheet]`
-* Monthly error reporting template: used by `[NUMBER]` delivery managers; `[X% reduction]` in `[ERROR TYPE]` over `[PERIOD]`
-* SOP and policy work: `[NUMBER]` SOPs covered; `[OUTCOME, e.g. X% reviewed by their due date]`
-* SharePoint migration: `[NUMBER]` sites migrated across `[NUMBER]` teams; `[OUTCOME, e.g. completed by the target date]`
 
-**Skills**
+**Projects: other cards** (fields with no facts supplied yet)
 
-* `[OTHER TOOLS, e.g. Excel, Power BI, Visio]`
+* System fault investigation: `[CHALLENGE]`
+* Classifier retimings mastersheet and findings report: `[CHALLENGE]`
+* SOP governance: review reminders and training standards: `[CONTEXT]`, `[CHALLENGE]`
+* New department intranet site: `[CHALLENGE]`
+* Change control: `[CONTEXT]`, `[CHALLENGE]`, `[OUTCOME]`
+
+If you would rather not fill a field, delete its `<dt>` heading and `<dd>` line together.
 
 ## Worth checking
 
-* The Context, Challenge and What I did text on each case study is written at a general, public level from the project titles. Read each one and adjust anything that does not match what you did, or that is more detail than you are comfortable sharing publicly.
+* The four post-Brexit case studies are written at a general, public level from the project titles. Read each one and adjust anything that does not match what you did. The other case studies use only the facts you supplied.
 * PDN is left as an abbreviation. Spell it out if you want recruiters outside UK regulation to follow it.
 * There is no preview image for LinkedIn. To add one, save a 1200 x 627 pixel image as `preview.png` in this folder and add `<meta property="og:image" content="https://muhammad-h-hussain.github.io/preview.png">` to the top of `index.html`.
