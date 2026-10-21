@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Hussain | Regulatory change and project delivery</title>
+  <meta name="description" content="Change Advisor at the MHRA with a background in medicines licensing, process improvement and automation. Seeking PMO and project management roles in Dubai and the Gulf.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1518" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Hussain | Regulatory change and project delivery">
+  <meta property="og:description" content="Medicines licensing, process improvement and project delivery. Open to PMO roles in Dubai and the Gulf.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+  <script src="content.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" data-bind="person.name">Muhammad Hussain</a>
+      <nav aria-label="Main">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#what-i-do">What I do</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow" data-bind="hero.eyebrow"></p>
+          <h1 id="hero-name" data-bind="person.name">Muhammad Hussain</h1>
+          <p class="statement" data-bind="hero.statement"></p>
+          <p class="hero-sub" data-bind="hero.sub"></p>
+          <div class="actions">
+            <a class="btn btn-primary" id="hero-linkedin" href="#contact" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" id="hero-cv" href="#" hidden>Download CV</a>
+          </div>
+        </div>
+        <aside class="glance" aria-label="At a glance">
+          <dl id="glance-list"></dl>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-h">
+      <div class="wrap narrow">
+        <h2 id="about-h" data-bind="about.heading">About</h2>
+        <div id="about-body" class="prose"></div>
+      </div>
+    </section>
+
+    <section id="what-i-do" class="section section-alt" aria-labelledby="wid-h">
+      <div class="wrap">
+        <h2 id="wid-h" data-bind="whatIDo.heading">What I do</h2>
+        <p class="section-intro" data-bind="whatIDo.intro"></p>
+        <div id="wid-list" class="pillars"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-h">
+      <div class="wrap">
+        <h2 id="projects-h" data-bind="projects.heading">Projects</h2>
+        <p class="section-intro" data-bind="projects.intro"></p>
+        <div id="project-filters" class="filters" role="group" aria-label="Filter projects by area"></div>
+        <p id="project-count" class="visually-hidden" aria-live="polite"></p>
+        <div id="project-list" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt" aria-labelledby="exp-h">
+      <div class="wrap narrow">
+        <h2 id="exp-h" data-bind="experience.heading">Experience</h2>
+        <ol id="exp-list" class="timeline"></ol>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h" data-bind="skills.heading">Skills and tools</h2>
+        <div id="skills-list" class="skill-groups"></div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section section-alt" aria-labelledby="cert-h">
+      <div class="wrap">
+        <h2 id="cert-h" data-bind="certifications.heading">Certifications</h2>
+        <ul id="cert-list" class="certs"></ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-h">
+      <div class="wrap narrow">
+        <h2 id="contact-h" data-bind="contact.heading">Get in touch</h2>
+        <p class="section-intro" data-bind="contact.intro"></p>
+        <dl id="contact-list" class="contact-list"></dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year"></span> <span data-bind="person.name">Muhammad Hussain</span></p>
+      <p>Last updated <span data-bind="meta.lastUpdated"></span></p>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="noscript">This site needs JavaScript to show its content. Please enable it, or contact Muhammad Hussain via LinkedIn.</p>
+  </noscript>
+</body>
+</html>
