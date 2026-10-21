@@ -130,6 +130,13 @@ mark.ph { background: var(--mark-bg); color: var(--mark-ink); padding: 0 0.25em;
 .nav-list li:last-child a { border-bottom: 0; }
 .nav-list a:hover { color: var(--accent); }
 
+/* Without JavaScript: no menu button or theme switch, links show in a wrapped row */
+html:not(.js) .nav-toggle,
+html:not(.js) .theme-toggle { display: none; }
+html:not(.js) .header-inner { flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
+html:not(.js) .nav-list { display: flex; flex-wrap: wrap; position: static; padding: 0; border: 0; background: none; gap: 0 14px; }
+html:not(.js) .nav-list a { border: 0; padding: 4px 0; font-size: 0.95rem; }
+
 @media (min-width: 900px) {
   .nav-toggle { display: none; }
   .nav-list { display: flex; position: static; padding: 0; border: 0; background: none; gap: 4px; }
@@ -269,3 +276,5 @@ mark.ph { background: var(--mark-bg); color: var(--mark-ink); padding: 0 0.25em;
   .card, .pillar, .cert, .glance { box-shadow: none; break-inside: avoid; }
   .card[hidden] { display: flex !important; }
 }
+
+.contact-actions { margin: 0 0 28px; }
