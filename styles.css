@@ -267,5 +267,5 @@ mark.ph { background: var(--mark-bg); color: var(--mark-ink); padding: 0 0.25em;
   .section, .hero { padding: 16px 0; }
   .section-alt { background: none; }
   .card, .pillar, .cert, .glance { box-shadow: none; break-inside: avoid; }
-  .card[hidden] { display: flex; }
+  .card[hidden] { display: flex !important; }
 }
