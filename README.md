@@ -73,7 +73,6 @@ None of these figures have been invented: replace each with a real, public numbe
 
 * Brexit transition team: `[NUMBER]` licence changes processed; `[OUTCOME, e.g. completed within the transition deadline]`
 * CAP grandfathering: `[NUMBER]` products converted; `[OUTCOME, e.g. continuity of supply maintained]`
-* PDN licence conversions: `[NUMBER]` PDN licences converted; `[OUTCOME]`
 * QPPV address conversions: `[NUMBER]` licences updated; `[OUTCOME, e.g. compliant ahead of the legislative deadline]`
 * Monthly error reporting template: used by `[NUMBER]` delivery managers; `[X% reduction]` in `[ERROR TYPE]` over `[PERIOD]`
 * SOP and policy work: `[NUMBER]` SOPs covered; `[OUTCOME, e.g. X% reviewed by their due date]`
@@ -86,5 +85,4 @@ None of these figures have been invented: replace each with a real, public numbe
 ## Worth checking
 
 * The Context, Challenge and What I did text on each case study is written at a general, public level from the project titles. Read each one and adjust anything that does not match what you did, or that is more detail than you are comfortable sharing publicly.
-* PDN is left as an abbreviation. Spell it out if you want recruiters outside UK regulation to follow it.
 * There is no preview image for LinkedIn. To add one, save a 1200 x 627 pixel image as `preview.png` in this folder and add `<meta property="og:image" content="https://muhammad-h-hussain.github.io/preview.png">` to the top of `index.html`.
