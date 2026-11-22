@@ -115,9 +115,10 @@
         <h2 id="about-h">About</h2>
         <div class="prose">
           <p>I work in the Continuous Improvement team at the MHRA, the UK's Medicines and Healthcare products Regulatory Agency. My job is to help colleagues improve how work gets done: tightening processes, automating routine tasks, writing clear procedures and reporting on what is really happening.</p>
-          <p>I joined the MHRA in 2021 as a classifier granting medicines licences, at a time when the UK was rebuilding its regulatory processes after leaving the EU. That experience taught me how much careful coordination sits behind regulatory change, and how much good process design matters when deadlines are fixed in law.</p>
-          <p>Before the MHRA I worked in the NHS and the Ministry of Justice. I also founded and ran my own contracting company, providing gateline and security services to Govia (Southern/Thameslink), which gave me an early lesson in owning delivery end to end.</p>
-          <p>I am now looking to bring that mix of regulatory knowledge, process discipline and delivery experience to PMO and project management roles in Dubai and the wider Gulf, where healthcare and life sciences are a growing priority. <mark class="ph">[OPTIONAL: one personal line on why the Gulf, e.g. family, long term plans or timing.]</mark></p>
+          <p>I joined the MHRA in 2021 as a classifier in the Brexit transition and Variations teams, granting medicines licences at a time when the UK was rebuilding its regulatory processes after leaving the EU. That experience taught me how much careful coordination sits behind regulatory change, and how much good process design matters when deadlines are fixed in law.</p>
+          <p>Before the MHRA I worked across the public sector: as a Project Officer on Southwark Council's digital infrastructure programme, a Court Associate at HM Courts and Tribunals Service, and at NHS Blood and Transplant. I also founded and ran my own contracting company, providing gateline and security services to Govia (Southern/Thameslink), which gave me an early lesson in owning delivery end to end.</p>
+          <p>I am now looking to bring that mix of regulatory knowledge, process discipline and delivery experience to PMO and project management roles in Dubai and the wider Gulf, where healthcare and life sciences are a growing priority.</p>
+          <p>For me the Gulf is a genuine opportunity, not a short posting. The region is investing seriously in healthcare, life sciences and regulatory capability, and that is exactly the kind of environment where my experience can make a difference. I am looking to build my career there for the long term and to grow with the organisation I join.</p>
         </div>
       </div>
     </section>
@@ -154,6 +155,7 @@
             <p class="lead">Coordinating change across teams and stakeholders.</p>
             <ul>
               <li>Coordinating migrations and rollouts across multiple teams</li>
+              <li>Leading teams day to day, from a team of six up to 16 people</li>
               <li>Keeping stakeholders informed, aligned and moving</li>
               <li>PMP candidate, exam scheduled for December 2026</li>
             </ul>
@@ -233,7 +235,7 @@
               <dt>Challenge</dt>
               <dd>The raw logs recorded every processing step, so one submission could appear several times, and error descriptions were inconsistent. The post-upgrade figures also looked far better than expected, which needed explaining before anyone relied on them.</dd>
               <dt>What I did</dt>
-              <dd>Analysed 10,145 processing events across three reporting periods, counting each case once on its final outcome to give 5,200 unique submissions. Standardised the raw error text into consistent categories and built an auditable six-sheet report with live formulas. Traced the inflated post-upgrade figures to a defect that stopped processed cases being logged, so excluded that period and set a reliable baseline from the other two. Alongside the analysis, I worked with the supplier's engineers to fix a workflow fault that added about 6 seconds to every case, and helped build, test and put live an automated safeguard that stops processing and preserves case details if the robots fail.</dd>
+              <dd>Alongside leading the 16-person team that processed RPA-handled submissions day to day, analysed 10,145 processing events across three reporting periods, counting each case once on its final outcome to give 5,200 unique submissions. Standardised the raw error text into consistent categories and built an auditable six-sheet report with live formulas. Traced the inflated post-upgrade figures to a defect that stopped processed cases being logged, so excluded that period and set a reliable baseline from the other two. Alongside the analysis, I worked with the supplier's engineers to fix a workflow fault that added about 6 seconds to every case, and helped build, test and put live an automated safeguard that stops processing and preserves case details if the robots fail.</dd>
               <dt class="result">Outcome</dt>
               <dd class="result-text">Established that the robots completed only 35.7% of cases without human input, with 42.0% correctly passed to manual handling as out of scope and 22.2% failing or flagged. This showed that the limited scope of the automation, rather than technical failure, was the biggest constraint on its value. The report gave senior leaders the evidence for their options analysis and led to the decision to end the platform's contract, removing a cost of £120,000 a year.</dd>
             </dl>
@@ -256,16 +258,16 @@
 
           <article class="card" data-category="Process and technology">
             <span class="tag">Process and technology</span>
-            <h3>Monthly error reporting template</h3>
+            <h3>Error reporting rebuild</h3>
             <dl>
               <dt>Context</dt>
-              <dd>Delivery managers oversee teams handling regulatory work, where errors are tracked to protect quality.</dd>
+              <dd>Errors found in licensing work are logged centrally and reported monthly to delivery managers, who use them in individual quality and performance discussions.</dd>
               <dt>Challenge</dt>
-              <dd>There was no consistent monthly view of errors, which made recurring issues hard to spot and act on.</dd>
+              <dd>Delivery managers found the monthly report hard to act on: it mixed months and did not show where each error came from. The underlying log also held duplicates and date errors that distorted individual error rates.</dd>
               <dt>What I did</dt>
-              <dd>Designed a standard monthly error reporting template using Lean Six Sigma thinking: clear error categories, consistent measurement and a focus on root causes.</dd>
+              <dd>Rebuilt the log and the report using Lean Six Sigma thinking: defined the problem with the delivery managers, fixed the measurement first, then automated the output. Built a pre-send quality check and a duplicate case checker, moved reporting onto a validation-date basis so it reconciles with the three-month error rates used in performance discussions, added team-level error rates, and wrote the SOP for the new process.</dd>
               <dt class="result">Outcome</dt>
-              <dd class="result-text">Used by <mark class="ph">[NUMBER]</mark> delivery managers. <mark class="ph">[X% reduction]</mark> in <mark class="ph">[ERROR TYPE]</mark> over <mark class="ph">[PERIOD]</mark>.</dd>
+              <dd class="result-text">Removed over 100 duplicate entries from 1,638 records, so individual error rates rest on clean data before any performance conversation. Delivery managers now get a report that matches the figures they act on, governed by a published SOP.</dd>
             </dl>
           </article>
 
@@ -278,9 +280,9 @@
               <dt>Challenge</dt>
               <dd>Training checklists and SOP reviews relied too heavily on individual practice, so procedures risked becoming inconsistent or out of date.</dd>
               <dt>What I did</dt>
-              <dd>Wrote a best practice procedure for training checklists, and designed an SOP review reminder and escalation process so documents are reviewed on time.</dd>
+              <dd>Designed a three-stage SOP review reminder and escalation process: reminders two months and two weeks before each review date, escalating to senior leaders, and a final notice once a document lapses, with every reminder filed for an audit trail. Consolidated licensing and validation SOPs into one controlled format, and authored a training best practice policy with a sign-off checklist for every trained process.</dd>
               <dt class="result">Outcome</dt>
-              <dd class="result-text"><mark class="ph">[NUMBER]</mark> SOPs covered by the review process. <mark class="ph">[OUTCOME, e.g. X% reviewed by their due date]</mark>.</dd>
+              <dd class="result-text">Gave the department an auditable, repeatable way to keep its 26 SOPs in date ahead of an audit in January 2027, with owners, review dates and every reminder on record.</dd>
             </dl>
           </article>
 
@@ -312,29 +314,35 @@
             <h3>Change Advisor</h3>
             <p class="org">MHRA, Continuous Improvement team, Data Assurance and Quality</p>
             <p class="dates">Feb 2023 to present</p>
-            <p class="summary">Process improvement, RPA performance reporting, error reporting, SOP development and change coordination across teams.</p>
+            <p class="summary">Process improvement, RPA performance analysis, target setting, SharePoint migration, error reporting and SOP governance. Led the 16-person RPA processing team day to day.</p>
           </li>
           <li>
-            <h3>DAQ Classifier</h3>
-            <p class="org">MHRA</p>
+            <h3>Classifier</h3>
+            <p class="org">MHRA, Brexit transition and Variations teams</p>
             <p class="dates">Apr 2021 to Feb 2023</p>
-            <p class="summary">Granted medicines licences, and worked in the Brexit transition team on CAP grandfathering, PDN to PLPI conversions and QPPV updates.</p>
+            <p class="summary">Validated and granted medicines licences. Owned the post-Brexit PDN to PLPI conversions, led a team of six on QPPV updates, and worked on CAP grandfathering.</p>
           </li>
           <li>
-            <h3><mark class="ph">[ROLE TITLE]</mark></h3>
-            <p class="org">Ministry of Justice</p>
-            <p class="dates"><mark class="ph">[DATES]</mark></p>
-            <p class="summary"><mark class="ph">[ONE LINE SUMMARY]</mark></p>
+            <h3>Project Officer, Digital Infrastructure Programme</h3>
+            <p class="org">Southwark Council</p>
+            <p class="dates">2020</p>
+            <p class="summary">Programme dashboards and stakeholder delivery for a fibre connectivity rollout across 96 sites within one month.</p>
           </li>
           <li>
-            <h3><mark class="ph">[ROLE TITLE]</mark></h3>
-            <p class="org">NHS</p>
-            <p class="dates"><mark class="ph">[DATES]</mark></p>
-            <p class="summary"><mark class="ph">[ONE LINE SUMMARY]</mark></p>
+            <h3>Court Associate</h3>
+            <p class="org">HM Courts and Tribunals Service (Ministry of Justice)</p>
+            <p class="dates">2019 to 2020</p>
+            <p class="summary">Case management, order drafting and procedural compliance in the Family Division of the High Court.</p>
           </li>
           <li>
-            <h3>Founder and owner</h3>
-            <p class="org">Own contracting company</p>
+            <h3>Donor Centre Administrator</h3>
+            <p class="org">NHS Blood and Transplant</p>
+            <p class="dates">2017 to 2019</p>
+            <p class="summary">Clinical records management, audits and reconciliations under regulated quality standards.</p>
+          </li>
+          <li>
+            <h3>Founder and Director</h3>
+            <p class="org">Hudhayfah Enterprise Ltd</p>
             <p class="dates">2016 to 2017</p>
             <p class="summary">Founded and ran a one person contracting company providing gateline and security services to Govia (Southern/Thameslink).</p>
           </li>
@@ -366,6 +374,7 @@
             <ul class="chips">
               <li>Lean Six Sigma (Green Belt)</li>
               <li>Root cause analysis</li>
+              <li>Sampling and target setting</li>
               <li>SOP and policy development</li>
               <li>Error and quality reporting</li>
             </ul>
@@ -376,12 +385,14 @@
               <li>Robotic process automation (RPA)</li>
               <li>Data analysis and reporting</li>
               <li>SharePoint (classic to modern)</li>
-              <li><mark class="ph">[OTHER TOOLS, e.g. Excel, Power BI, Visio]</mark></li>
+              <li>Excel and Power BI</li>
+              <li>SQL and Python</li>
             </ul>
           </div>
           <div>
             <h3>Delivery</h3>
             <ul class="chips">
+              <li>Team leadership</li>
               <li>Stakeholder coordination</li>
               <li>Cross-team change</li>
               <li>Migration planning and tracking</li>
@@ -432,7 +443,7 @@
         <dl class="contact-list">
           <div><dt>Email</dt><dd><a href="mailto:REPLACE-WITH-EMAIL@example.com"><mark class="ph">[EMAIL ADDRESS]</mark></a></dd></div>
           <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/muhammad-hudhayfah-hussain" target="_blank" rel="noopener">linkedin.com/in/muhammad-hudhayfah-hussain</a></dd></div>
-          <div><dt>Location</dt><dd><mark class="ph">[LOCATION, e.g. London, UK]</mark></dd></div>
+          <div><dt>Location</dt><dd>London, UK. Open to relocation to the UAE and wider GCC.</dd></div>
           <div><dt>Availability</dt><dd><mark class="ph">[AVAILABILITY, e.g. notice period and relocation timeline]</mark></dd></div>
         </dl>
       </div>
