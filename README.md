@@ -71,7 +71,6 @@ None of these figures have been invented: replace each with a real, public numbe
 
 **Project outcomes**
 
-* Brexit transition team: `[NUMBER]` licence changes processed; `[OUTCOME, e.g. completed within the transition deadline]`
 * CAP grandfathering: `[NUMBER]` products converted; `[OUTCOME, e.g. continuity of supply maintained]`
 * Monthly error reporting template: used by `[NUMBER]` delivery managers; `[X% reduction]` in `[ERROR TYPE]` over `[PERIOD]`
 * SOP and policy work: `[NUMBER]` SOPs covered; `[OUTCOME, e.g. X% reviewed by their due date]`
