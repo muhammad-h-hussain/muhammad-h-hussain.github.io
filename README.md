@@ -54,28 +54,11 @@ None of these figures have been invented: replace each with a real, public numbe
 **Contact section**
 
 * `[EMAIL ADDRESS]`
-* `[LOCATION, e.g. London, UK]`
 * `[AVAILABILITY, e.g. notice period and relocation timeline]`
-
-**About**
-
-* `[OPTIONAL: one personal line on why the Gulf, e.g. family, long term plans or timing.]`
-
-**Experience**
-
-* Ministry of Justice: `[ROLE TITLE]`, `[DATES]`, `[ONE LINE SUMMARY]`
-* NHS: `[ROLE TITLE]`, `[DATES]`, `[ONE LINE SUMMARY]`
-* Reorder these two so the most recent is first.
 
 **Project outcomes**
 
 * CAP grandfathering: `[NUMBER]` products converted; `[OUTCOME, e.g. continuity of supply maintained]`
-* Monthly error reporting template: used by `[NUMBER]` delivery managers; `[X% reduction]` in `[ERROR TYPE]` over `[PERIOD]`
-* SOP and policy work: `[NUMBER]` SOPs covered; `[OUTCOME, e.g. X% reviewed by their due date]`
-
-**Skills**
-
-* `[OTHER TOOLS, e.g. Excel, Power BI, Visio]`
 
 ## Worth checking
 
