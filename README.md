@@ -75,7 +75,6 @@ None of these figures have been invented: replace each with a real, public numbe
 * CAP grandfathering: `[NUMBER]` products converted; `[OUTCOME, e.g. continuity of supply maintained]`
 * Monthly error reporting template: used by `[NUMBER]` delivery managers; `[X% reduction]` in `[ERROR TYPE]` over `[PERIOD]`
 * SOP and policy work: `[NUMBER]` SOPs covered; `[OUTCOME, e.g. X% reviewed by their due date]`
-* SharePoint migration: `[NUMBER]` sites migrated across `[NUMBER]` teams; `[OUTCOME, e.g. completed by the target date]`
 
 **Skills**
 
