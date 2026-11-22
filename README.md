@@ -49,13 +49,11 @@ None of these figures have been invented: replace each with a real, public numbe
 
 **Links** (replace every occurrence; they are real links once filled in)
 
-* `REPLACE-WITH-LINKEDIN-ID`: your LinkedIn profile ID, the part after `linkedin.com/in/`. Appears 2 times (hero button, contact button).
 * `REPLACE-WITH-EMAIL@example.com`: your email address. Appears 3 times (hero "Get in touch" button, contact "Email me" button, contact list).
 
 **Contact section**
 
 * `[EMAIL ADDRESS]`
-* `[LINKEDIN PROFILE NAME]`
 * `[LOCATION, e.g. London, UK]`
 * `[AVAILABILITY, e.g. notice period and relocation timeline]`
 
